@@ -4,8 +4,19 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
+
+
+			<!-- Left Column (Email Addresses) -->
+            <div class="col-md-4">
+                <p>Aodong Liu</p>
+                <p>al777@uw.edu</p>
+                <p>aodong.liu@vanderbilt.edu</p>
+            </div>
+
+
+            <!-- Middle Column (Social Badges) -->
+            <div class="col-md-4 text-center">
+                <ul class="list-inline">
                     <% if (theme.twitter_url) { %>
                         <li>
                             <a href="<%- theme.twitter_url%>" target="_blank">
@@ -71,10 +82,29 @@
                             </a>
                         </li>
                     <% } %>
-                </ul>
+                    </ul>
+            </div>
+
+
+
+            <!-- Right Column (Address) -->
+            <div class="col-md-4">
+                <p>311A Bagley Hall</p>
+                <p>Department of Chemistry</p>
+                <p>University of Washington</p>
+                <p>Seattle, WA 98195-1700</p>
+            </div>
+        </div>
+
+
+ 		<!-- Copyright Text -->
+        <div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p class="copyright text-muted">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br></p>
+<!--
                 <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
                 <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+-->
             </div>
         </div>
     </div>
